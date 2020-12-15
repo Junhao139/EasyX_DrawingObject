@@ -12,17 +12,26 @@ int wmain(int argc, wchar_t** argv, wchar_t** envp) {
 
 	CString formatStr;
 	formatStr.Format(L"%d FPS", (int)img.GetFPS());
-	IP_Text fps((WCHAR*)(const WCHAR*)formatStr, 100, 10, 0x000000, 20);
+	IP_Text fps = IP_Text((WCHAR*)(const WCHAR*)formatStr, 100, 10, 0x000000, 20);
 
 	img.AddElement(&fps);
 
 	img.Start();	// ESSENTIAL!!!!
 
+	img.RemoveElement(&fps);
+
+	bool Show = true;
 	while (true) {
 		if (_kbhit()) {
 			if (_getch() == ' ') {
 				break;
 			}
+		}
+
+		if ((int)img.GetFPS() > 300) {
+			img.RecoverElement(&fps);
+		} else {
+			img.RemoveElement(&fps);
 		}
 
 		formatStr.Format(L"%d FPS", (int)img.GetFPS());

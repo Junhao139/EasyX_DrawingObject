@@ -1,2 +1,9 @@
 ﻿  Example.cpp
-  DrawingObject.vcxproj -> D:\GitHub\Junhao139\EasyX_DrawingObject\DrawingObject\Debug\DrawingObject.exe
+D:\GitHub\Junhao139\EasyX_DrawingObject\DrawingObject\DrawingObject\Example.cpp(38,72): error C2679: '=' binario: no se encontró un operador que adopte un operando en la parte derecha de tipo 'IP_Text' (o bien no existe una conversión aceptable)
+D:\GitHub\Junhao139\EasyX_DrawingObject\DrawingObject\DrawingObject\IP_Object.h(127,7): message : puede ser 'void IP_Text::operator =(IP_Text &)'
+D:\GitHub\Junhao139\EasyX_DrawingObject\DrawingObject\DrawingObject\Example.cpp(38,72): message : al hacer coincidir la lista de argumentos '(IP_Text, IP_Text)'
+  ImageProc.cpp
+D:\GitHub\Junhao139\EasyX_DrawingObject\DrawingObject\DrawingObject\ImageProc.cpp(43,6): warning C4101: 'Index': variable local sin referencia
+D:\GitHub\Junhao139\EasyX_DrawingObject\DrawingObject\DrawingObject\ImageProc.cpp(100,43): warning C4101: 'EndEpoch': variable local sin referencia
+D:\GitHub\Junhao139\EasyX_DrawingObject\DrawingObject\DrawingObject\ImageProc.cpp(99,43): warning C4101: 'BeginEpoch': variable local sin referencia
+  Generando código...
