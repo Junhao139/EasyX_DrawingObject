@@ -32,6 +32,8 @@ public:
 		this->_hInstance = GetModuleHandle(NULL);
 
 		this->_AutoClose = true;
+		this->AverageFPS_CalcTimes = 1;
+		this->AverageFPS = 0;
 	};
 
 	void Start();
@@ -55,17 +57,18 @@ public:
 
 	void ClearRenderList();
 
-	int GetViewportWidth() { return this->_ViewportWidth; }
-	int GetViewportHeight() { return this->_ViewportHeight; }
+	int GetViewportWidth() const { return this->_ViewportWidth; }
+	int GetViewportHeight() const { return this->_ViewportHeight; }
 	void SetViewportWidth(int Width) { this->_ViewportWidth = Width; }
 	void SetViewportHeight(int Height) { this->_ViewportHeight = Height; }
 	void SetBgColor(COLORREF Color) { this->BackgroundColor = Color; }
 
-	HDC GetHDC() { return this->_hDC; }
-	HWND GetImageHWnd() { return this->_hWnd; }
-	HINSTANCE GetHInstance() { return this->_hInstance; }
+	HDC GetHDC() const { return this->_hDC; }
+	HWND GetImageHWnd() const { return this->_hWnd; }
+	HINSTANCE GetHInstance() const { return this->_hInstance; }
 
 	double GetFPS() const { return this->CurrentFPS; }
+	double GetAverageFPS() const { return this->AverageFPS; }
 	void SetConstFPS(double fps) { this->ConstantFPS = fps; }
 
 	void AutomaticClose(bool ifTrue);
@@ -81,6 +84,8 @@ private:
 
 	double ConstantFPS;
 	double CurrentFPS;
+	double AverageFPS;
+	unsigned int AverageFPS_CalcTimes;
 
 	bool MsgKey = true;
 	static void Render(bool* Key, ImageProc* parent);

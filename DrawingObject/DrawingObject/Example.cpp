@@ -18,8 +18,6 @@ int wmain(int argc, wchar_t** argv, wchar_t** envp) {
 
 	img.Start();	// ESSENTIAL!!!!
 
-	img.RemoveElement(&fps);
-
 	bool Show = true;
 	while (true) {
 		if (_kbhit()) {
@@ -28,13 +26,14 @@ int wmain(int argc, wchar_t** argv, wchar_t** envp) {
 			}
 		}
 
+		/*
 		if ((int)img.GetFPS() > 300) {
 			img.RecoverElement(&fps);
 		} else {
 			img.RemoveElement(&fps);
-		}
+		}*/
 
-		formatStr.Format(L"%d FPS", (int)img.GetFPS());
+		formatStr.Format(L"%d FPS", (int)img.GetAverageFPS());
 		fps = IP_Text((WCHAR*)(const WCHAR*)formatStr, 100, 10, 0x000000, 20);
 	}
 

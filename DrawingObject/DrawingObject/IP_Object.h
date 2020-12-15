@@ -124,7 +124,7 @@ public:
 		}
 	}
 
-	void operator=(IP_Text& _Right) {
+	void operator=(IP_Text _Right) {
 		int Index = this->_Index;
 		memcpy(this, &_Right, sizeof(IP_Text));
 		this->_Index = Index;

@@ -88,10 +88,10 @@ void ImageProc::ClearRenderList() {
 
 void ImageProc::Render(bool* Key, ImageProc* parent) {
 	int ListSize;
-	IP_Rectangle* ptr_Rectangle;
-	IP_Circle* ptr_Circle;
-	IP_Image* ptr_Image;
-	IP_Text* ptr_Text;
+	static IP_Rectangle* ptr_Rectangle;
+	static IP_Circle* ptr_Circle;
+	static IP_Image* ptr_Image;
+	static IP_Text* ptr_Text;
 
 	using namespace std::chrono;
 	steady_clock::time_point BeginCount, EndCount;
@@ -178,6 +178,7 @@ void ImageProc::Render(bool* Key, ImageProc* parent) {
 		BeginCount = steady_clock::now();
 
 		parent->CurrentFPS = 1000000.0 / Duration.count();
+		parent->AverageFPS = (parent->AverageFPS + parent->CurrentFPS) / 2;
 	}
 }
 
