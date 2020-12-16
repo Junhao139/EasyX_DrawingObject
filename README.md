@@ -4,7 +4,7 @@
 配置需要：
 * 库
   * ```#include <easyx.h>``` (下载地址：[Easyx](https://easyx.cn/downloads/))
-  * ```#include <altstr.h>``` (VS 自带)
+  * ```#include <altstr.h>``` (Visual Studio 自带)
 
 
 主要使用方法：
