@@ -1,6 +1,11 @@
 # EasyX_DrawingObject
 使用 EasyX 作为主要绘图库，将绘图对象化，节省开发时间。
 
+配置需要：
+* 库
+  * ```#include <easyx.h>``` (下载地址：[Easyx](https://easyx.cn/downloads/))
+  * ```#include <altstr.h>``` (VS 自带)
+
 
 主要使用方法：
 ```cpp
