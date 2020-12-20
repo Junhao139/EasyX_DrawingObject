@@ -1,6 +1,9 @@
 # EasyX_DrawingObject
  - 简介：使用 EasyX 作为主要绘图库，将绘图对象化，节省开发时间。
-[`更新日志`](https://github.com/Junhao139/EasyX_DrawingObject/UpdateLog.md)
+ 
+ 
+更新日志入口：[`更新日志`](https://github.com/Junhao139/EasyX_DrawingObject/UpdateLog.md)
+文档入口（暂无）：[`技术文档`](https://github.com/Junhao139/EasyX_DrawingObject/)
 
 配置需要：
 * 库
