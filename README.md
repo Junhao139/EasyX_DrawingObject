@@ -4,7 +4,7 @@
 > 目前版本：v0.0.1a_201217
  
  
-更新日志入口：[`更新日志`](https://github.com/Junhao139/EasyX_DrawingObject/UpdateLog.md)
+更新日志入口：[`更新日志`](https://github.com/Junhao139/EasyX_DrawingObject/blob/main/UpdateLog.md)
 
 文档入口：[`技术文档`](https://github.com/Junhao139/EasyX_DrawingObject/blob/main/Technical%20Document/v0.0.1a_201217.md)
 
