@@ -1,12 +1,12 @@
 # EasyX_DrawingObject
  - 简介：使用 EasyX 作为主要绘图库，将绘图对象化，节省开发时间。
  
-> 目前版本：v0.0.1a_201217
+> 目前版本：v0.0.1b_201225
  
  
 更新日志入口：[`更新日志`](https://github.com/Junhao139/EasyX_DrawingObject/blob/main/UpdateLog.md)
 
-文档入口：[`技术文档`](https://github.com/Junhao139/EasyX_DrawingObject/blob/main/Technical%20Document/v0.0.1a_201217.md)
+文档入口：[`技术文档`](https://github.com/Junhao139/EasyX_DrawingObject/blob/main/Technical%20Document/v0.0.1b_201225.md)
 
 配置需要：
 * 库
@@ -21,12 +21,12 @@ WindowProc wnd(640, 480, 0xffffff);
 
 然后声明一个对象：
 ```cpp
-IP_Rectangle rect = IP_Rectangle();
+IP_Object obj = IP_Object();
 ```
 
 将对象传入窗口渲染流：
 ```cpp
-wnd.AddElement(&rect);
+wnd << obj;
 ```
 
 再开启窗口（当然您可以在对象声明后的任何位置使用此函数）：
@@ -34,7 +34,6 @@ wnd.AddElement(&rect);
 ```cpp
 wnd.Start();
 ```
-
 
 这样子就可以让 WindowProc 的对象来绘图了。
 
