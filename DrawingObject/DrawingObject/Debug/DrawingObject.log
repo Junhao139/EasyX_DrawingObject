@@ -1,5 +1,0 @@
-﻿  ImageProc.cpp
-D:\GitHub\Junhao139\EasyX_DrawingObject\DrawingObject\DrawingObject\ImageProc.cpp(43,6): warning C4101: 'Index': variable local sin referencia
-D:\GitHub\Junhao139\EasyX_DrawingObject\DrawingObject\DrawingObject\ImageProc.cpp(100,43): warning C4101: 'EndEpoch': variable local sin referencia
-D:\GitHub\Junhao139\EasyX_DrawingObject\DrawingObject\DrawingObject\ImageProc.cpp(99,43): warning C4101: 'BeginEpoch': variable local sin referencia
-LINK : fatal error LNK1168: no se puede abrir D:\GitHub\Junhao139\EasyX_DrawingObject\DrawingObject\Debug\DrawingObject.exe para escritura
