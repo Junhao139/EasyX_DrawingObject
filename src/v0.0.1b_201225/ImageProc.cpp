@@ -268,6 +268,6 @@ ImageProc::~ImageProc() {
 		closegraph();
 	}
 
-	delete this->_graphics;
-	delete this->_SolidBrush;
+	//delete this->_graphics;
+	//delete this->_SolidBrush;
 }
