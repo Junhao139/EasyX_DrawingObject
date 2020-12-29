@@ -2,9 +2,9 @@
 
 #include <Windows.h>
 #include <easyx.h>
-#include <ObjIdl.h>
-#include <gdiplus.h>
-#pragma comment(lib, "Gdiplus.lib")
+//#include <ObjIdl.h>
+//#include <gdiplus.h>
+//#pragma comment(lib, "Gdiplus.lib")
 
 #include <vector>
 #include <thread>
@@ -33,8 +33,8 @@ public:
 		this->AverageFPS_CalcTimes = 1;
 		this->AverageFPS = 0;
 
-		this->_graphics = new Gdiplus::Graphics(GetImageHDC());
-		this->_SolidBrush = new Gdiplus::SolidBrush(Gdiplus::Color(255, 0, 0, 0));
+		//this->_graphics = new Gdiplus::Graphics(GetImageHDC());
+		//this->_SolidBrush = new Gdiplus::SolidBrush(Gdiplus::Color(255, 0, 0, 0));
 
 		srand(time(0));
 		this->DynamicCode = rand();
@@ -72,8 +72,8 @@ private:
 	std::vector<ObjectProps*> RenderList;
 	std::thread RenderProcess;
 
-	Gdiplus::SolidBrush* _SolidBrush;
-	Gdiplus::Graphics* _graphics;
+	//Gdiplus::SolidBrush* _SolidBrush;
+	//Gdiplus::Graphics* _graphics;
 
 	int _ViewportWidth;
 	int _ViewportHeight;
